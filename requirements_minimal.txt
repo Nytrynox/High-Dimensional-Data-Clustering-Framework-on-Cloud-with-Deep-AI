@@ -1,0 +1,39 @@
+"""
+Database-Free Requirements - Minimal dependencies for local-only operation
+"""
+
+# Core Data Science (Free)
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Basic Clustering (Free)
+scipy==1.11.2
+
+# API Framework (Free)
+fastapi==0.101.1
+uvicorn[standard]==0.23.2
+pydantic==2.1.1
+
+# Utilities (Free)
+python-dotenv==1.0.0
+click==8.1.6
+
+# Optional: Enhanced clustering (Free but optional)
+# Uncomment these if you want advanced algorithms:
+# umap-learn==0.5.3
+# hdbscan==0.8.29
+
+# Optional: Deep Learning (Free but heavy)
+# Uncomment these if you want neural clustering:
+# torch==2.0.1
+# tensorflow==2.13.0
+
+# Optional: Visualization (Free)
+# plotly==5.15.0
+
+# Optional: Jupyter for analysis (Free)
+# jupyter==1.0.0
+# notebook==7.0.2

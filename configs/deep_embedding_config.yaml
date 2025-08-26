@@ -1,0 +1,48 @@
+# Deep Embedding Clustering Configuration
+
+model:
+  algorithm: "deep_embedding"
+  n_clusters: 8
+  latent_dim: 10
+  alpha: 1.0
+
+training:
+  epochs: 100
+  pretrain_epochs: 100
+  batch_size: 256
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 10  # Early stopping patience
+
+data:
+  path: "data/sample_dataset.csv"
+  validation_split: 0.2
+  shuffle: true
+  normalize: true
+  
+preprocessing:
+  remove_outliers: true
+  outlier_method: "isolation_forest"
+  fill_missing: true
+  missing_strategy: "mean"
+  
+optimization:
+  optimizer: "adam"
+  scheduler: "step"
+  step_size: 30
+  gamma: 0.1
+  
+mlflow:
+  enabled: true
+  tracking_uri: "file:./mlruns"
+  experiment_name: "deep_embedding_clustering"
+  
+monitoring:
+  log_frequency: 10
+  save_frequency: 25
+  plot_embeddings: true
+  
+output:
+  model_dir: "models"
+  results_dir: "results"
+  plots_dir: "plots"

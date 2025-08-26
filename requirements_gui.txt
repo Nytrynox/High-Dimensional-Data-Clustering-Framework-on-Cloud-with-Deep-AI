@@ -1,0 +1,17 @@
+# Simple GUI Requirements
+# Only what's needed for the graphical interface
+
+# Core data science (required)
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+
+# Plotting (required for visualization)
+matplotlib==3.7.2
+
+# GUI is built with Tkinter (comes with Python - no install needed!)
+
+# Optional: Enhanced functionality
+# Uncomment these if you want additional features:
+# seaborn==0.12.2  # Better default plot styles
+# plotly==5.15.0   # Interactive plots
